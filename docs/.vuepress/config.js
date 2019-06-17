@@ -162,8 +162,7 @@ let searchConfig = {
  * 放在themeConfig中
  */
 let repositoryConfig = {
-  base: "/apijson-doc/",
-  repo: "vincentCheng/apijson-doc",
+  repo: "https://github.com/vincentCheng/apijson-doc.git",
   repoLabel: "APIJSON 文档",
   // 默认为 false，设置为 true 来启用
   editLinks: true,
@@ -176,6 +175,7 @@ let repositoryConfig = {
  * serviceWorker 这个是能够提醒用户，网站更新了。
  */
 module.exports = {
+  base: "/apijson-doc/",
   ...siteLanguagesConfig,
   themeConfig: {
     serviceWorker: {
