@@ -160,6 +160,10 @@ let searchConfig = {
 /**
  * 仓库的配置
  * 放在themeConfig中
+ *
+ * 部署失败的原因二：
+ * 这个要写在 “themeConfig” 中，
+ * 并且要写清楚 repo: "https://github.com/vincentCheng/apijson-doc.git" 这个是仓库的地址
  */
 let repositoryConfig = {
   repo: "https://github.com/vincentCheng/apijson-doc.git",
@@ -173,6 +177,9 @@ let repositoryConfig = {
 
 /**
  * serviceWorker 这个是能够提醒用户，网站更新了。
+ *
+ * 部署失败的原因一：
+ * base: "/apijson-doc/",要写在“themeConfig”的外面，并且只能填写仓库的“名字”
  */
 module.exports = {
   base: "/apijson-doc/",
