@@ -41,19 +41,26 @@ let sidebarConfig = {
   activeHeaderLinks: false, // 默认值：true
   sidebarDepth: 2,
   sidebar: {
-    "/foo/": [
-      // 注意，这个和上面的navBar对应，这是一个新的页面中的侧边栏
-      "" /* /foo/ */,
-      "one" /* /foo/one.html */,
-      "two" /* /foo/two.html */
-    ],
-    "/bar/": [
-      "" /* /bar/ */,
-      "three" /* /bar/three.html */,
-      "four" /* /bar/four.html */
-    ],
     // 回退(fallback)侧边栏配置
-    "/": ["", "contact", "about"]
+    "/zh/": [
+      "" /* /zh/ */,
+      "install" /* /zh/install.html */,
+      "sqlconfig" /* /zh/sqlconfig.html */,
+      "grammar" /* /zh/grammar.html */,
+      "newinterface" /* /zh/newinterface.html */,
+      "all" /* /zh/all.html */
+    ]
+    // "/foo/": [
+    //   // 注意，这个和上面的navBar对应，这是一个新的页面中的侧边栏
+    //   "" /* /foo/ */,
+    //   "one" /* /foo/one.html */,
+    //   "two" /* /foo/two.html */
+    // ],
+    // "/bar/": [
+    //   "" /* /bar/ */,
+    //   "three" /* /bar/three.html */,
+    //   "four" /* /bar/four.html */
+    // ],
     // {
     //   title: "Group 1",
     //   collapsable: false,
@@ -82,18 +89,19 @@ let sidebarLanguagesConfig = { "/": { sidebar: "auto" } };
  */
 let siteLanguagesConfig = {
   locales: {
-    "/": {
+    "/zh/home/": {
       lang: "zh-CN",
-      title: "VuePress 中文",
-      description: "Vue 驱动的静态网站生成器"
-    },
+      title: "APIJSON 官方文档",
+      description:
+        "apijson 的官方文档 后端接口和文档自动化，前端(客户端) 定制返回JSON的数据和结构 码云GPV"
+    }
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
-    "/en-US/": {
-      lang: "en-US", // 将会被设置为 <html> 的 lang 属性
-      title: "VuePress English",
-      description: "Vue-powered Static Site Generator"
-    }
+    // "/en-US/": {
+    //   lang: "en-US", // 将会被设置为 <html> 的 lang 属性
+    //   title: "VuePress English",
+    //   description: "Vue-powered Static Site Generator"
+    // }
   }
 };
 
@@ -167,7 +175,7 @@ let searchConfig = {
  */
 let repositoryConfig = {
   repo: "https://github.com/vincentCheng/apijson-doc.git",
-  repoLabel: "APIJSON 文档",
+  repoLabel: "GitHub",
   // 默认为 false，设置为 true 来启用
   editLinks: true,
   // 自定义编辑链接的文本。默认是 "Edit this page"
@@ -183,15 +191,18 @@ let repositoryConfig = {
  */
 module.exports = {
   base: "/apijson-doc/",
+  title: "apijson-doc",
+  description: "Apijson 的官方文档",
+  head: [["link", { rel: "icon", href: "/APIJSON_Logo.png" }]],
   ...siteLanguagesConfig,
   themeConfig: {
     serviceWorker: {
       updatePopup: true
     },
-    // ...navbarConfig
+    // ...navbarConfig,
     // ...defaultLanguagesConfig,
-    // ...sidebarLanguagesConfig
-    // ...sidebarAutoConfig
+    // ...sidebarLanguagesConfig,
+    // ...sidebarAutoConfig,
     ...sidebarConfig,
     ...repositoryConfig
   }
