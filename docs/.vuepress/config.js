@@ -174,7 +174,7 @@ let searchConfig = {
  * 并且要写清楚 repo: "https://github.com/vincentCheng/apijson-doc.git" 这个是仓库的地址
  */
 let repositoryConfig = {
-  repo: "https://github.com/vincentCheng/apijson-doc.git",
+  repo: "https://github.com/vincentCheng/apijson-doc",
   repoLabel: "GitHub",
   // 默认为 false，设置为 true 来启用
   editLinks: true,
