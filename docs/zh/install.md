@@ -6,7 +6,9 @@ JDK: 1.8+
 
 MAVEN: 3.0+
 
-数据库: Mysql / Oracle
+Mysql / Oracle
+
+Eclipse Java EE IDE for Web Developers.Version: Mars.1 Release (4.5.1)
 
 ## 下载项目
 
@@ -24,14 +26,14 @@ Eclipse 导入：
 
 顶部菜单 File > Import > Maven > Existing Maven Projects > Next > Browse
 
-你的 clone 的项目所在目录/APIJSON-Master/APIJSON-Java-Server/APIJSONBoot
+选择项目所在目录/APIJSON-Master/APIJSON-Java-Server/APIJSONBoot
 
-报依赖错误的时候，同目录下的 lib 里面的 jar 添加到 Build Path 中。
+当报依赖错误的时候，将同目录下的 libs 里面的 jar 包添加到 Build Path 中。
 ![install2](../.vuepress/public/assets/install2.png)
 
-为了方便修改源代码，你可以像我一样不添加 libs/apijson-orm-3.5.1.jar 文件到 Build Path 中。而是 libs/apijson-orm-3.5.1.jar 的源码，复制到当前项目里。
+为了方便修改源代码，你可以像我一样不添加 libs/apijson-orm-3.5.1.jar 文件到 Build Path 中。而是将 libs/apijson-orm-3.5.1.jar 的源码，复制到当前项目里，然后添加到 Build Path 中。
 
-源代码在 APIJSON-Master/APIJSON-Java-Server/APIJSONORM 项目中。
+源代码在 APIJSON-Master/APIJSON-Java-Server/APIJSONORM。
 
 ## 错误修改
 
