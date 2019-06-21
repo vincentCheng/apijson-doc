@@ -4,7 +4,7 @@ heroImage: /APIJSON_Logo.png
 heroText: APIJSON
 tagline: 官方文档
 actionText: 快速上手 →
-actionLink: /zh/
+actionLink: /zh/install/
 features:
   - title: 在线解析
     details: 自动生成接口文档，清晰可读永远最新。自动生成请求代码，支持Android和iOS。自动生成JavaBean文件，一键下载。自动管理与测试接口用例，一键共享。自动校验与格式化JSON，支持高亮和收展。

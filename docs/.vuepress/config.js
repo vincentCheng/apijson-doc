@@ -4,31 +4,33 @@
 let navbarConfig = {
   navbar: true,
   nav: [
-    { text: "Home", link: "/" },
-    { text: "Foo", link: "/foo/" },
-    { text: "Bar", link: "/bar/" },
-    {
-      text: "Languages",
-      items: [{ text: "中文", link: "/" }, { text: "English", link: "/en-US/" }]
-    },
-    {
-      text: "嵌套的items",
-      items: [
-        {
-          text: "Group1",
-          items: [
-            { text: "Group1-1", link: "/language/chinese" },
-            { text: "Group1-2", link: "/language/japanese" }
-          ]
-        },
-        {
-          text: "Group2",
-          items: [
-            /*  */
-          ]
-        }
-      ]
-    }
+    { text: "文档", link: "/zh/" },
+    { text: "常见问题", link: "/FAQ/" }
+    // { text: "Home", link: "/" },
+    // { text: "Foo", link: "/foo/" }
+    // { text: "Bar", link: "/bar/" },
+    // {
+    //   text: "Languages",
+    //   items: [{ text: "中文", link: "/" }, { text: "English", link: "/en-US/" }]
+    // },
+    // {
+    //   text: "嵌套的items",
+    //   items: [
+    //     {
+    //       text: "Group1",
+    //       items: [
+    //         { text: "Group1-1", link: "/language/chinese" },
+    //         { text: "Group1-2", link: "/language/japanese" }
+    //       ]
+    //     },
+    //     {
+    //       text: "Group2",
+    //       items: [
+    //         /*  */
+    //       ]
+    //     }
+    //   ]
+    // }
   ]
 };
 
@@ -49,13 +51,14 @@ let sidebarConfig = {
       "grammar" /* /zh/grammar.html */,
       "newinterface" /* /zh/newinterface.html */,
       "all" /* /zh/all.html */
-    ]
+    ],
+    "/FAQ/": [""]
     // "/foo/": [
     //   // 注意，这个和上面的navBar对应，这是一个新的页面中的侧边栏
     //   "" /* /foo/ */,
     //   "one" /* /foo/one.html */,
     //   "two" /* /foo/two.html */
-    // ],
+    // ]
     // "/bar/": [
     //   "" /* /bar/ */,
     //   "three" /* /bar/three.html */,
@@ -199,7 +202,7 @@ module.exports = {
     serviceWorker: {
       updatePopup: true
     },
-    // ...navbarConfig,
+    ...navbarConfig,
     // ...defaultLanguagesConfig,
     // ...sidebarLanguagesConfig,
     // ...sidebarAutoConfig,

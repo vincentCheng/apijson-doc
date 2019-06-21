@@ -37,19 +37,25 @@ Eclipse 导入：
 
 ## 错误修改
 
-如果使用最新版本的 Mysql 8，由于驱动更新。有可能这时候 pom.xml 会报错，例如：
+有可能 pom.xml 会报错，例如：
 
 ```java
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 ```
 
-这段代码中的这一句：
+这段代码中的这一句提示错误：
 
 ```java
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 ```
 
-提示错误。 其实是 maven 中安装包的问题。 那么在你的 maven 包存放路径，例如（Window->Preference->Maven->User Settings）中删除对应的包，然后使用 Maven 重新下载。
-具体操作请自行百度。
-国内请使用 Maven 的镜像安装，更快！
+修改步骤：
+
+- 请修改 Eclipse 中的 Maven 镜像地址，以便更快下载或者更新，具体方法自行百度；
+- 打开 Eclipse->Windows->Preferences->Maven->Installations->add 这个按钮用于指定 maven 的安装目录。这里不建议使用 eclipse 自带的，需要再自己设置。最终效果如下图所示：
+  ![install3](../.vuepress/public/assets/install3.png)
+- 打开 Eclipse->Windows->Preferences->Maven->User Settings 这是指定 setting.xml 的位置，同时导向自己的本地 maven 仓库。最终效果如下图所示：
+  ![install4](../.vuepress/public/assets/install4.png)
+
+以上截图仅为示例，实际路径请以自己设定为准。
