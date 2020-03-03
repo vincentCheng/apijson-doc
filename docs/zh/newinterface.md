@@ -61,6 +61,7 @@ static { //注册权限
 		ACCESS_MAP.put(Stone.class.getSimpleName(), getAccessMap(Stone.class.getAnnotation(MethodAccess.class)));
 	}
 ```
+## 权限管理 Access 表的配置
 
 ## 接口管理 Request 表的配置
 
