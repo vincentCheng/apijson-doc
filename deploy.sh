@@ -22,4 +22,6 @@ git commit -m 'deploy'
 # 如果你想要部署到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:vincentcheng/apijson-doc.git master:gh-pages
 
+# 删除dist文件夹
+git rm -r --cached "docs/.vuepress/dist"
 cd -
