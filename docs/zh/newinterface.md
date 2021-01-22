@@ -61,6 +61,13 @@ static { //注册权限
 		ACCESS_MAP.put(Stone.class.getSimpleName(), getAccessMap(Stone.class.getAnnotation(MethodAccess.class)));
 	}
 ```
+## 权限管理 Access 表的配置
+
+在access数据表中添加一条数据,比如你的表名是：eye_director,而entity的类名是：EyeDirector
+
+```sql
+INSERT INTO `apijson`.`access` (`id`, `debug`, `name`, `alias`, `get`, `head`, `gets`, `heads`, `post`, `put`, `delete`, `date`) VALUES ('19', '0', 'eye_director', 'EyeDirector', '["UNKNOWN", "LOGIN", "CONTACT", "CIRCLE", "OWNER", "ADMIN"]', '["UNKNOWN", "LOGIN", "CONTACT", "CIRCLE", "OWNER", "ADMIN"]', '["LOGIN", "CONTACT", "CIRCLE", "OWNER", "ADMIN"]', '["LOGIN", "CONTACT", "CIRCLE", "OWNER", "ADMIN"]', '["OWNER", "ADMIN"]', '["OWNER", "ADMIN"]', '["OWNER", "ADMIN"]', '2020-03-02 18:23:37');
+```
 
 ## 接口管理 Request 表的配置
 
