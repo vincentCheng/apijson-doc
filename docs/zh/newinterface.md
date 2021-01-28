@@ -52,7 +52,7 @@ public class Stone {
 
 注册权限是必须的，这样程序才能使用你配置的类权限去管理你的接口
 
-`DemoSQLConfig`，48 行
+`DemoVerifier`，25 行
 
 ```java
 static { //注册权限
